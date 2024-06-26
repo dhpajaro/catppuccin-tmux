@@ -133,10 +133,11 @@ main() {
   # NOTE: With the @catppuccin_window_tabs_enabled set to on, we're going to
   # update the right_column1 and the window_status_* variables.
   if [[ "${wt_enabled}" == "on" ]]; then
-    right_column1=$show_directory
     window_status_format=$show_window_in_window_status
     window_status_current_format=$show_window_in_window_status_current
   fi
+  window_status_format=$show_window_in_window_status
+  window_status_current_format=$show_window_in_window_status_current
 
   if [[ "${user}" == "on" ]]; then
     right_column2=$right_column2$show_user
