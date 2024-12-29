@@ -152,7 +152,7 @@ main() {
 
   set status-left ""
 
-  set status-right "#{prefix_highlight} #{network_speed} ${right_column2}"
+  set status-right "#{df_avail_private1} #{df_avail_private2} #{df_avail_private3} #{prefix_highlight} #{network_speed} ${right_column2}"
 
   setw window-status-format "${window_status_format}"
   setw window-status-current-format "${window_status_current_format}"
